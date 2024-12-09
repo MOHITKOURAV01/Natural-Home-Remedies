@@ -6,67 +6,162 @@
     <title>Fenugreek</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #e8f5e9;  
-            color: #3e3e3e;
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #f9f3fb;
+            color: #333;
             margin: 0;
             padding: 0;
+            animation: fadeIn 2s ease-in;
         }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
         header {
-            background-color: #81c784;  
-            padding: 10px;
+            background-color: #ab47bc;
+            padding: 20px;
             text-align: center;
+            animation: slideInFromTop 1s ease-out;
         }
+
+        @keyframes slideInFromTop {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
         nav a {
             margin: 0 15px;
             text-decoration: none;
             color: #fff;
             font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease;
         }
-        main {
-            padding: 20px;
-            text-align: center;
-            margin:0px 0px 100px 0px;
 
+        nav a:hover {
+            color: #fbc02d;
         }
-        .remedy-img {
-            width: 60%;
-            max-width: 600px;
-            border-radius: 10px;
-            margin: 20px 0;
+
+        main {
+            padding: 40px;
+            text-align: center;
+            margin: 0px 0px 100px 0px;
+            animation: fadeInUp 1s ease-out;
         }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
         h1 {
-            font-size: 32px;
-            color: #388e3c;  
+            font-size: 36px;
+            color: #7b1fa2;
+            font-weight: 700;
+            animation: fadeIn 1s ease-in;
         }
+
         p {
-            font-size: 18px;
-            color: #333;
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            animation: fadeInUp 1.2s ease-out;
         }
+
         h2 {
-            color: #81c784;  
+            color: #ff7043;
+            font-size: 24px;
+            font-weight: 600;
+            animation: fadeInUp 1.5s ease-out;
         }
+
         ul {
             text-align: left;
             display: inline-block;
+            animation: fadeInUp 2s ease-out;
+            margin: 0;
+            padding: 0;
         }
+
         ul li {
             font-size: 18px;
-            margin: 10px 0;
+            margin: 12px 0;
+            color: #3e3e3e;
         }
+
         a {
             text-decoration: none;
-            color: #388e3c;
+            color: #7b1fa2;
             font-weight: bold;
             font-size: 18px;
+            margin-top: 30px;
+            display: inline-block;
+            animation: fadeInUp 2.2s ease-out;
         }
+
+        a:hover {
+            text-decoration: underline;
+            color: #ff7043;
+        }
+
         footer {
-            background-color: #81c784;  
+            background-color: #ab47bc;
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             position: fixed;
             width: 100%;
             bottom: 0;
+        }
+
+        .remedy-img {
+            width: 60%;
+            max-width: 600px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin: 30px 0;
+            animation: slideInFromBottom 1.5s ease-out;
+        }
+
+        @keyframes slideInFromBottom {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+            p, ul li {
+                font-size: 16px;
+            }
+            .remedy-img {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -85,45 +180,45 @@
         <p>
             Fenugreek seeds are small, golden-brown seeds with a slightly bitter taste. They are commonly used in cooking and have been valued for their health benefits for centuries.
         </p>
-        <p>
+        <p style="color:#7b1fa2">
             Key Benefits of Fenugreek Seeds:
         </p>
-            <li style="color:black">Helps regulate blood sugar levels and supports diabetes management.</li>
-            <li style="color:black">Promotes healthy digestion and relieves constipation.</li>
-            <li style="color:black">Boosts milk production in breastfeeding mothers.</li>
-            <li style="color:black">Improves heart health by lowering cholesterol levels.</li>
-            <li style="color:black">Contains anti-inflammatory properties that help reduce pain and swelling.</li>
+        <ul>
+            <li>Helps regulate blood sugar levels and supports diabetes management.</li>
+            <li>Promotes healthy digestion and relieves constipation.</li>
+            <li>Boosts milk production in breastfeeding mothers.</li>
+            <li>Improves heart health by lowering cholesterol levels.</li>
+            <li>Contains anti-inflammatory properties that help reduce pain and swelling.</li>
+        </ul>
 
+        <section class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>1 teaspoon fenugreek seeds</li>
+                <li>1 cup hot water</li>
+                <li>1 teaspoon honey (optional, for sweetness)</li>
+                <li>1 teaspoon lemon juice (optional, for flavor)</li>
+                <li>Fresh mint leaves (optional, for garnish)</li>
+            </ul>
+        </section>
 
-            <main>
-                <section class="ingredients">
-                    <h2>Ingredients</h2>
-                    
-                        <li>1 teaspoon fenugreek seeds</li>
-                        <li>1 cup hot water</li>
-                        <li>1 teaspoon honey (optional, for sweetness)</li>
-                        <li>1 teaspoon lemon juice (optional, for flavor)</li>
-                        <li>Fresh mint leaves (optional, for garnish)</li>
-                    
-                </section>
-                <section class="instructions">
-                    <h2>Instructions</h2>
-                    
-                        <li>Boil 1 cup of water in a kettle or saucepan.</li>
-                        <li>While the water is heating, place 1 teaspoon of fenugreek seeds in a mug.</li>
-                        <li>Once the water has boiled, pour it over the fenugreek seeds in the mug.</li>
-                        <li>Let the tea steep for about 5-10 minutes, allowing the flavor to infuse.</li>
-                        <li>Optional: Add honey for sweetness and lemon juice for extra flavor.</li>
-                        <li>Optional: Garnish with fresh mint leaves for a refreshing touch.</li>
-                        <li>Stir the tea and enjoy your fenugreek tea!</li>
-                    
-                </section>
-            </main>
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <ul>
+                <li>Boil 1 cup of water in a kettle or saucepan.</li>
+                <li>While the water is heating, place 1 teaspoon of fenugreek seeds in a mug.</li>
+                <li>Once the water has boiled, pour it over the fenugreek seeds in the mug.</li>
+                <li>Let the tea steep for about 5-10 minutes, allowing the flavor to infuse.</li>
+                <li>Optional: Add honey for sweetness and lemon juice for extra flavor.</li>
+                <li>Optional: Garnish with fresh mint leaves for a refreshing touch.</li>
+                <li>Stir the tea and enjoy your fenugreek tea!</li>
+            </ul>
+        </section>
 
-        <a href="remedies.html"> ← Back to Remedies</a>
+        <a href="remedies.html">← Back to Remedies</a>
     </main>
     <footer>
-        <p>&copy; 2024 Natural Home Remedies</p>
+        <p style="color:#3e3e3e">&copy; 2024 Natural Home Remedies</p>
     </footer>
 </body>
 </html>
