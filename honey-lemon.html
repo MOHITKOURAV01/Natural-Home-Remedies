@@ -6,58 +6,144 @@
     <title>Honey & Lemon</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f1f8e9; /* Light green background */
-            color: #3e3e3e;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9fbe7;
+            color: #424242;
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
+            animation: fadeIn 0.8s ease-in;
         }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
         header {
-            background-color: #81c784; /* Soft green header */
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #fff;
-            font-size: 18px;
-        }
-        main {
+            background-color: #ffeb3b;
             padding: 20px;
             text-align: center;
-            margin:0px 0px 100px 0px;
+            animation: slideIn 0.8s ease-out;
         }
-        .remedy-img {
-            width: 60%;
-            max-width: 600px;
-            border-radius: 10px;
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #37474f;
+        }
+
+        main {
+            padding: 40px 20px;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #ff9800;
+            margin-bottom: 20px;
+            animation: slideUp 0.8s ease-out;
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        p {
+            font-size: 20px;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+            animation: fadeIn 1.2s ease-in;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #4caf50;
+            margin-top: 40px;
+            animation: slideUp 0.8s ease-out;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            display: inline-block;
             margin: 20px 0;
         }
-        h1 {
-            font-size: 32px;
-            color: #66bb6a; /* Light green for heading */
-        }
-        p {
+
+        li {
             font-size: 18px;
-            color: #333;
+            color: #424242;
+            margin: 10px 0;
+            line-height: 1.8;
+            animation: fadeIn 1.2s ease-in;
         }
-        h2 {
-            color: #81c784; /* Softer green for subheadings */
+
+        .remedy-img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 30px 0;
+            transition: transform 0.3s ease;
         }
+
+        .remedy-img:hover {
+            transform: scale(1.05);
+        }
+
         a {
             text-decoration: none;
-            color: #388e3c;
+            color: #0288d1;
             font-weight: bold;
             font-size: 18px;
+            transition: color 0.3s;
         }
+
+        a:hover {
+            color: #01579b;
+        }
+
         footer {
-            background-color: #81c784; /* Soft green footer */
+            background-color: #ffeb3b;
             text-align: center;
-            padding: 10px;
+            padding: 15px 0;
             position: fixed;
             width: 100%;
             bottom: 0;
+            font-size: 16px;
+            color: #fff;
+            animation: fadeIn 0.8s ease-in;
         }
     </style>
 </head>
@@ -80,37 +166,37 @@
         <p style="color:green">
             Key Benefits of Honey and Lemon:
         </p>
-            <li style="color:black">Natural antimicrobial properties that help soothe sore throats.</li>
-            <li style="color:black">Rich in antioxidants that help detoxify the body and fight inflammation.</li>
-            <li style="color:black">Promotes better digestion and supports gut health.</li>
-            <li style="color:black">Boosts the immune system and helps fight common cold symptoms.</li>
-            <li style="color:black">Improves skin health when consumed regularly due to its vitamin C content.</li>
+        <ul>
+            <li>Natural antimicrobial properties that help soothe sore throats.</li>
+            <li>Rich in antioxidants that help detoxify the body and fight inflammation.</li>
+            <li>Promotes better digestion and supports gut health.</li>
+            <li>Boosts the immune system and helps fight common cold symptoms.</li>
+            <li>Improves skin health when consumed regularly due to its vitamin C content.</li>
+        </ul>
 
+        <section class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>1 cup hot water</li>
+                <li>1-2 tablespoons honey</li>
+                <li>Juice of half a lemon</li>
+                <li>Lemon slice (optional, for garnish)</li>
+                <li>Pinch of ginger powder (optional)</li>
+            </ul>
+        </section>
 
-            <main>
-                <section class="ingredients">
-                    <h2>Ingredients</h2>
-                
-                        <li>1 cup hot water</li>
-                        <li>1-2 tablespoons honey</li>
-                        <li>Juice of half a lemon</li>
-                        <li>Lemon slice (optional, for garnish)</li>
-                        <li>Pinch of ginger powder (optional)</li>
-                    
-                </section>
-                <section class="instructions">
-                    <h2>Instructions</h2>
-                    
-                        <li>Boil water and pour it into a mug.</li>
-                        <li>Add 1-2 tablespoons of honey into the hot water.</li>
-                        <li>Squeeze the juice of half a lemon into the mug.</li>
-                        <li>Stir well to combine the honey and lemon juice.</li>
-                        <li>Add a pinch of ginger powder (optional) for extra flavor.</li>
-                        <li>Garnish with a lemon slice if desired.</li>
-                        <li>Enjoy your warm, soothing honey and lemon tea!</li>
-                    
-                </section>
-            </main>
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <ul>
+                <li>Boil water and pour it into a mug.</li>
+                <li>Add 1-2 tablespoons of honey into the hot water.</li>
+                <li>Squeeze the juice of half a lemon into the mug.</li>
+                <li>Stir well to combine the honey and lemon juice.</li>
+                <li>Add a pinch of ginger powder (optional) for extra flavor.</li>
+                <li>Garnish with a lemon slice if desired.</li>
+                <li>Enjoy your warm, soothing honey and lemon tea!</li>
+            </ul>
+        </section>
 
         <a href="remedies.html">← Back to Remedies</a>
     </main>
