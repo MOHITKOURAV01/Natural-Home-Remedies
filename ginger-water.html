@@ -6,59 +6,144 @@
     <title>Ginger Water</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #c8e6c9; 
-            color: #3e3e3e;
+            font-family: 'Roboto', sans-serif;
+            background-color: #e8f5e9;
+            color: #424242;
             margin: 0;
             padding: 0;
+            animation: fadeIn 1s ease-in;
         }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
         header {
-            background-color: #4caf50;  
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #fff;
-            font-size: 18px;
-        }
-        main {
+            background-color: #388e3c;
             padding: 20px;
             text-align: center;
-            margin:0px 0px 100px 0px;
-
+            animation: slideIn 0.8s ease-out;
         }
-        .remedy-img {
-            width: 60%;
-            max-width: 600px;
-            border-radius: 10px;
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ecf0f1;
+        }
+
+        main {
+            padding: 40px 20px;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+            margin-bottom: 100px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #4caf50;
+            margin-bottom: 20px;
+            animation: slideUp 0.8s ease-out;
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        p {
+            font-size: 20px;
+            color: #424242;
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+            animation: fadeIn 1.2s ease-in;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #66bb6a;
+            margin-top: 40px;
+            animation: slideUp 0.8s ease-out;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            display: inline-block;
             margin: 20px 0;
         }
-        h1 {
-            font-size: 32px;
-            color: #388e3c; 
-         }
-        p {
+
+        li {
             font-size: 18px;
-            color: #333;
+            color: #424242;
+            margin: 10px 0;
+            line-height: 1.8;
+            animation: fadeIn 1.2s ease-in;
         }
-        h2 {
-            color: #66bb6a;  
+
+        .remedy-img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 30px 0;
+            transition: transform 0.3s ease;
         }
+
+        .remedy-img:hover {
+            transform: scale(1.05);
+        }
+
         a {
             text-decoration: none;
-            color: #388e3c;
+            color: #0288d1;
             font-weight: bold;
             font-size: 18px;
+            transition: color 0.3s;
         }
+
+        a:hover {
+            color: #01579b;
+        }
+
         footer {
-            background-color: #4caf50;  
+            background-color: #388e3c;
             text-align: center;
-            padding: 10px;
+            padding: 15px 0;
             position: fixed;
             width: 100%;
             bottom: 0;
+            font-size: 16px;
+            color: #fff;
+            animation: fadeIn 1s ease-in;
         }
     </style>
 </head>
@@ -74,44 +159,43 @@
     <main>
         <h1>Ginger Water: A Natural Health Drink</h1>
         <img src="ginger water.jpeg" alt="Ginger Water" class="remedy-img">
-         <p>
+        <p>
             Ginger water is a refreshing and health-boosting drink made from fresh ginger root. It is known for its ability to improve digestion, reduce inflammation, and boost overall wellness.
         </p>
         <p style="color: green;">
             Key Benefits of Ginger Water:
         </p>
-    
-            <li style="color:black">Improves digestion and alleviates bloating.</li>
-            <li style="color:black">Helps reduce inflammation and relieve muscle pain.</li>
-            <li style="color:black">Boosts the immune system and fights infections.</li>
-            <li style="color:black">Aids in detoxifying the body and promoting healthy skin.</li>
-            <li style="color:black">Provides natural</li>
+        <ul>
+            <li>Improves digestion and alleviates bloating.</li>
+            <li>Helps reduce inflammation and relieve muscle pain.</li>
+            <li>Boosts the immune system and fights infections.</li>
+            <li>Aids in detoxifying the body and promoting healthy skin.</li>
+            <li>Provides natural energy and reduces fatigue.</li>
+        </ul>
 
+        <section class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>1 cup water</li>
+                <li>1-inch piece of fresh ginger root (or 1 teaspoon ginger powder)</li>
+                <li>1 teaspoon honey or lemon (optional, for taste)</li>
+                <li>Lemon slice (optional, for garnish)</li>
+            </ul>
+        </section>
 
-            <main>
-                <section class="ingredients">
-                    <h2>Ingredients</h2>
-                    
-                        <li>1 cup water</li>
-                        <li>1-inch piece of fresh ginger root (or 1 teaspoon ginger powder)</li>
-                        <li>1 teaspoon honey or lemon (optional, for taste)</li>
-                        <li>Lemon slice (optional, for garnish)</li>
-                    
-                </section>
-                <section class="instructions">
-                    <h2>Instructions</h2>
-                    
-                        <li>Boil 1 cup of water in a small saucepan or kettle.</li>
-                        <li>Peel and slice the ginger into thin pieces (or use ginger powder).</li>
-                        <li>Once the water boils, add the ginger slices (or powder) to the water.</li>
-                        <li>Simmer the ginger in the water for 5-10 minutes, depending on how strong you want the flavor.</li>
-                        <li>Strain the water into a mug to remove the ginger pieces.</li>
-                        <li>Add honey or lemon (optional) for sweetness or a tangy flavor.</li>
-                        <li>Garnish with a lemon slice if desired.</li>
-                        <li>Serve warm and enjoy your refreshing ginger water!</li>
-                    
-                </section>
-            </main>
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <ul>
+                <li>Boil 1 cup of water in a small saucepan or kettle.</li>
+                <li>Peel and slice the ginger into thin pieces (or use ginger powder).</li>
+                <li>Once the water boils, add the ginger slices (or powder) to the water.</li>
+                <li>Simmer the ginger in the water for 5-10 minutes, depending on how strong you want the flavor.</li>
+                <li>Strain the water into a mug to remove the ginger pieces.</li>
+                <li>Add honey or lemon (optional) for sweetness or a tangy flavor.</li>
+                <li>Garnish with a lemon slice if desired.</li>
+                <li>Serve warm and enjoy your refreshing ginger water!</li>
+            </ul>
+        </section>
 
         <a href="remedies.html">← Back to Remedies</a>
     </main>
