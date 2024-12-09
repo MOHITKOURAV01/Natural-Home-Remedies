@@ -11,55 +11,113 @@
             color: #3e3e3e;
             margin: 0;
             padding: 0;
+            animation: fadeIn 1.5s ease-in;
         }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
         header {
             background-color: #66bb6a; 
             padding: 10px;
             text-align: center;
+            animation: slideInFromTop 1s ease-out;
         }
+
+        @keyframes slideInFromTop {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
         nav a {
             margin: 0 15px;
             text-decoration: none;
             color: #fff;
             font-size: 18px;
+            transition: transform 0.3s ease;
         }
+
+        nav a:hover {
+            transform: scale(1.1);
+        }
+
         main {
             padding: 20px;
             text-align: center;
-            margin:0px 0px 100px 0px;
+            margin: 0px 0px 100px 0px;
+            animation: fadeInUp 1s ease-out;
+        }
 
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
-        .remedy-img {
-            width: 60%;
-            max-width: 600px;
-            border-radius: 10px;
-            margin: 20px 0;
-        }
+
         h1 {
             font-size: 32px;
             color: #388e3c;  
+            animation: slideInFromLeft 1s ease-out;
         }
+
+        @keyframes slideInFromLeft {
+            from {
+                transform: translateX(-50%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
         p {
             font-size: 18px;
             color: #333;
+            animation: fadeInUp 1.5s ease-out;
         }
+
         h2 {
             color: #66bb6a; 
+            animation: fadeInUp 1s ease-out;
         }
+
         ul {
             text-align: left;
             display: inline-block;
+            animation: fadeInUp 1.8s ease-out;
         }
+
         ul li {
             font-size: 18px;
             margin: 10px 0;
         }
+
         a {
             text-decoration: none;
             color: #388e3c;
             font-weight: bold;
             font-size: 18px;
+            animation: fadeInUp 2s ease-out;
         }
+
         footer {
             background-color: #66bb6a;  
             text-align: center;
@@ -67,6 +125,52 @@
             position: fixed;
             width: 100%;
             bottom: 0;
+        }
+
+        .remedy-img {
+            width: 60%;
+            max-width: 600px;
+            border-radius: 10px;
+            margin: 20px 0;
+            animation: slideInFromBottom 2s ease-out;
+        }
+
+        @keyframes slideInFromBottom {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .ingredients, .instructions {
+            text-align: left;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        .ingredients li, .instructions li {
+            margin-bottom: 12px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 15px;
+            }
+            main {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 30px;
+            }
+            p, ul {
+                font-size: 16px;
+            }
+            .remedy-img {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -88,39 +192,33 @@
         <p>
             Key Benefits of Garlic:
         </p>
-            <li style="color:black">Boosts the immune system and fights infections.</li>
-            <li style="color:black">Contains antioxidants that help reduce oxidative stress.</li>
-            <li style="color:black">Improves heart health by lowering blood pressure and cholesterol.</li>
-            <li style="color:black">Helps with detoxification and supports liver function.</li>
-            <li style="color:black">Has anti-inflammatory properties that reduce swelling and pain.</li>
+        <li style="color:black">Boosts the immune system and fights infections.</li>
+        <li style="color:black">Contains antioxidants that help reduce oxidative stress.</li>
+        <li style="color:black">Improves heart health by lowering blood pressure and cholesterol.</li>
+        <li style="color:black">Helps with detoxification and supports liver function.</li>
+        <li style="color:black">Has anti-inflammatory properties that reduce swelling and pain.</li>
 
-
-
-            <main>
-                <section class="ingredients">
-                    <h2>Ingredients</h2>
-                
-                        <li>1-2 garlic cloves (crushed)</li>
-                        <li>1 cup hot water</li>
-                        <li>1 teaspoon honey (optional, for sweetness)</li>
-                        <li>1 teaspoon lemon juice (optional, for flavor)</li>
-                        <li>Fresh ginger (optional, for added warmth)</li>
-                    
-                </section>
-                <section class="instructions">
-                    <h2>Instructions</h2>
-                    
-                        <li>Peel and crush 1-2 garlic cloves.</li>
-                        <li>Boil 1 cup of water in a kettle or saucepan.</li>
-                        <li>Once the water boils, add the crushed garlic to the water.</li>
-                        <li>Let the garlic steep in the water for about 5 minutes.</li>
-                        <li>Optional: Add fresh ginger for extra warmth and flavor.</li>
-                        <li>Strain the tea into a mug to remove the garlic and ginger pieces.</li>
-                        <li>Optional: Add honey and lemon juice for sweetness and flavor.</li>
-                        <li>Stir and enjoy your health-boosting garlic tea!</li>
-                    
-                </section>
-            </main>
+        <main>
+            <section class="ingredients">
+                <h2>Ingredients</h2>
+                <li>1-2 garlic cloves (crushed)</li>
+                <li>1 cup hot water</li>
+                <li>1 teaspoon honey (optional, for sweetness)</li>
+                <li>1 teaspoon lemon juice (optional, for flavor)</li>
+                <li>Fresh ginger (optional, for added warmth)</li>
+            </section>
+            <section class="instructions">
+                <h2>Instructions</h2>
+                <li>Peel and crush 1-2 garlic cloves.</li>
+                <li>Boil 1 cup of water in a kettle or saucepan.</li>
+                <li>Once the water boils, add the crushed garlic to the water.</li>
+                <li>Let the garlic steep in the water for about 5 minutes.</li>
+                <li>Optional: Add fresh ginger for extra warmth and flavor.</li>
+                <li>Strain the tea into a mug to remove the garlic and ginger pieces.</li>
+                <li>Optional: Add honey and lemon juice for sweetness and flavor.</li>
+                <li>Stir and enjoy your health-boosting garlic tea!</li>
+            </section>
+        </main>
 
         <a href="remedies.html">← Back to Remedies</a>
     </main>
