@@ -147,12 +147,24 @@
         }
 
         .ingredients, .instructions {
-            text-align: left;
+            text-align: center; /* Center the content */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center the list items */
             animation: fadeInUp 1.5s ease-out;
+            margin: 0 auto; /* Ensure the sections are centered */
+            padding: 10px;
         }
 
         .ingredients li, .instructions li {
             margin-bottom: 12px;
+            font-size: 18px;
+        }
+
+        .ingredients h2, .instructions h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #66bb6a;
         }
 
         @media (max-width: 768px) {
@@ -189,26 +201,31 @@
         <p>
             Garlic (Allium sativum) is a bulbous plant used widely in cooking and known for its medicinal properties. It has been used for centuries to treat various health conditions and boost immunity.
         </p>
-        <p>
+        <p style="color:#388e3c">
             Key Benefits of Garlic:
         </p>
-        <li style="color:black">Boosts the immune system and fights infections.</li>
-        <li style="color:black">Contains antioxidants that help reduce oxidative stress.</li>
-        <li style="color:black">Improves heart health by lowering blood pressure and cholesterol.</li>
-        <li style="color:black">Helps with detoxification and supports liver function.</li>
-        <li style="color:black">Has anti-inflammatory properties that reduce swelling and pain.</li>
+        <ul>
+            <li style="color:black">Boosts the immune system and fights infections.</li>
+            <li style="color:black">Contains antioxidants that help reduce oxidative stress.</li>
+            <li style="color:black">Improves heart health by lowering blood pressure and cholesterol.</li>
+            <li style="color:black">Helps with detoxification and supports liver function.</li>
+            <li style="color:black">Has anti-inflammatory properties that reduce swelling and pain.</li>
+        </ul>
 
-        <main>
-            <section class="ingredients">
-                <h2>Ingredients</h2>
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
                 <li>1-2 garlic cloves (crushed)</li>
                 <li>1 cup hot water</li>
                 <li>1 teaspoon honey (optional, for sweetness)</li>
                 <li>1 teaspoon lemon juice (optional, for flavor)</li>
                 <li>Fresh ginger (optional, for added warmth)</li>
-            </section>
-            <section class="instructions">
-                <h2>Instructions</h2>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <ul>
                 <li>Peel and crush 1-2 garlic cloves.</li>
                 <li>Boil 1 cup of water in a kettle or saucepan.</li>
                 <li>Once the water boils, add the crushed garlic to the water.</li>
@@ -217,8 +234,8 @@
                 <li>Strain the tea into a mug to remove the garlic and ginger pieces.</li>
                 <li>Optional: Add honey and lemon juice for sweetness and flavor.</li>
                 <li>Stir and enjoy your health-boosting garlic tea!</li>
-            </section>
-        </main>
+            </ul>
+        </div>
 
         <a href="remedies.html">← Back to Remedies</a>
     </main>
