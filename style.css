@@ -1,4 +1,3 @@
-/* Reset and Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +11,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Header Section */
 header {
     background: linear-gradient(135deg, #88d498, #4caf50);
     padding: 15px 0;
@@ -59,7 +57,8 @@ header nav a:hover::after {
     width: 100%;
 }
 
-/* Hero Section */
+
+
 .hero-section {
     padding: 100px 20px;
     text-align: center;
@@ -104,7 +103,8 @@ header nav a:hover::after {
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Remedies Section */
+
+
 main {
     padding: 50px 20px;
 }
@@ -127,7 +127,8 @@ main h1::after {
     border-radius: 2px;
 }
 
-/* Remedy Cards */
+
+
 .remedy-card {
     background: #fff;
     border-radius: 15px;
@@ -175,7 +176,8 @@ main h1::after {
     transform: translateY(-3px);
 }
 
-/* Detail Section */
+
+
 .detail-section {
     background: #e9f5db;
     padding: 40px 20px;
@@ -199,7 +201,8 @@ main h1::after {
     color: #2c3e50;
 }
 
-/* Footer */
+
+
 footer {
     background: linear-gradient(135deg, #4caf50, #88d498);
     color: white;
@@ -218,7 +221,8 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Animations */
+
+
 @keyframes slideInFromTop {
     from {
         transform: translateY(-100%);
@@ -279,7 +283,8 @@ footer a:hover {
     }
 }
 
-/* Responsive Design */
+
+
 @media (max-width: 768px) {
     .hero-section h1 {
         font-size: 2.5rem;
@@ -324,7 +329,8 @@ footer a:hover {
     gap: 30px;
 }
 
-/* Contact Form */
+
+
 .contact-form {
     background: #fff;
     padding: 30px;
@@ -379,7 +385,8 @@ footer a:hover {
     background: #88d498;
 }
 
-/* Contact Info */
+
+
 .contact-info {
     text-align: left;
     max-width: 400px;
@@ -409,7 +416,8 @@ footer a:hover {
     overflow: hidden;
 }
 
-/* Animations */
+
+
 @keyframes fadeInLeft {
     from {
         opacity: 0;
@@ -433,14 +441,11 @@ footer a:hover {
 }
 
 
-/* About Page Styles */
-
-/* Header Navigation */
 header nav a.active {
     color: #ffd700;
 }
 
-/* About Section Header */
+
 .about-header {
     text-align: center;
     padding: 50px 20px;
@@ -464,7 +469,7 @@ header nav a.active {
     animation: fadeInUp 1.5s ease-in-out;
 }
 
-/* About Main Content */
+
 .about-main {
     padding: 50px 20px;
     background: #f0f7ed;
@@ -500,7 +505,7 @@ header nav a.active {
     margin-left: 20px;
 }
 
-/* Footer */
+
 footer {
     background: linear-gradient(135deg, #4caf50, #88d498);
     color: white;
@@ -519,7 +524,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Animations */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -584,7 +589,7 @@ footer a:hover {
     }
 }
 
-/* Global Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -598,7 +603,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Navigation Bar */
+
 header nav {
     display: flex;
     justify-content: center;
@@ -628,7 +633,7 @@ header nav a:hover {
     transform: scale(1.1);
 }
 
-/* Remedies Header Section */
+
 .remedies-header {
     text-align: center;
     padding: 60px 20px;
@@ -649,7 +654,7 @@ header nav a:hover {
     animation: fadeInUp 1.2s ease-in-out;
 }
 
-/* Remedies Main Section */
+
 .remedies-main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -658,7 +663,7 @@ header nav a:hover {
     background: #f0f7ed;
 }
 
-/* Remedy Card */
+
 .remedy-card {
     background: white;
     border-radius: 10px;
@@ -702,7 +707,7 @@ header nav a:hover {
     transform: translateY(-3px);
 }
 
-/* Footer */
+
 footer {
     background: linear-gradient(135deg, #4caf50, #88d498);
     color: white;
@@ -719,7 +724,7 @@ footer a:hover {
     color: #ff6f61;
 }
 
-/* Animations */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -751,7 +756,7 @@ footer a:hover {
     }
 }
 
-/* Global Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -765,7 +770,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Navigation Bar */
+
 header nav {
     display: flex;
     justify-content: center;
@@ -795,7 +800,7 @@ header nav a:hover {
     transform: scale(1.1);
 }
 
-/* Remedies Header Section */
+
 .remedies-header {
     text-align: center;
     padding: 60px 20px;
@@ -816,7 +821,7 @@ header nav a:hover {
     animation: fadeInUp 1.2s ease-in-out;
 }
 
-/* Remedies Main Section */
+
 .remedies-main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -825,7 +830,7 @@ header nav a:hover {
     background: #f9f9f9;
 }
 
-/* Remedy Card */
+
 .remedy-card {
     background: white;
     border-radius: 10px;
@@ -869,7 +874,7 @@ header nav a:hover {
     transform: translateY(-3px);
 }
 
-/* Footer */
+
 footer {
     background: linear-gradient(135deg, #4caf50, #81c784);
     color: white;
@@ -886,7 +891,7 @@ footer a:hover {
     color: #ff6f61;
 }
 
-/* Animations */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -918,22 +923,21 @@ footer a:hover {
     }
 }
 
-/* Reset some basic styling */
+
 body, h1, p, a {
     margin: 0;
     padding: 0;
 }
 
-/* Set a background color and font family for the whole page */
+
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f4c3; /* Light green background for a natural feel */
+    background-color: #f0f4c3; 
     color: #4a4a4a;
 }
 
-/* Style for the header with navigation */
 header {
-    background-color: #81c784; /* Soft green background */
+    background-color: #81c784; 
     padding: 20px;
     text-align: center;
 }
@@ -947,12 +951,12 @@ nav a {
 }
 
 nav a:hover {
-    color: #388e3c; /* Darker green when hovering */
+    color: #388e3c; 
 }
 
-/* Hero section with a large title and a welcoming paragraph */
+
 .hero-section {
-    background: linear-gradient(45deg, #66bb6a, #43a047); /* Green gradient background */
+    background: linear-gradient(45deg, #66bb6a, #43a047); 
     color: white;
     padding: 80px 20px;
     text-align: center;
@@ -973,7 +977,7 @@ nav a:hover {
 
 .cta {
     font-size: 20px;
-    background-color: #388e3c; /* Dark green */
+    background-color: #388e3c; 
     padding: 15px 30px;
     color: #fff;
     text-decoration: none;
@@ -984,11 +988,11 @@ nav a:hover {
 }
 
 .cta:hover {
-    background-color: #66bb6a; /* Light green on hover */
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    background-color: #66bb6a; 
+    transform: scale(1.05); 
 }
 
-/* Add some padding and a soft footer */
+
 footer {
     background-color: #66bb6a;
     text-align: center;
@@ -998,7 +1002,6 @@ footer {
     bottom: 0;
 }
 
-/* Animation for the header and text */
 @keyframes fadeIn {
     from {
         opacity: 0;
