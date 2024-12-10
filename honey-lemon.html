@@ -22,17 +22,27 @@
             text-decoration: none;
             color: #fff;
             font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #f1f8e9;
         }
         main {
             padding: 20px;
             text-align: center;
-            margin:0px 0px 100px 0px;
+            margin: 0px 0px 100px 0px;
+            animation: fadeIn 1.5s ease;
         }
         .remedy-img {
             width: 60%;
             max-width: 600px;
             border-radius: 10px;
             margin: 20px 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .remedy-img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
         h1 {
             font-size: 32px;
@@ -45,11 +55,22 @@
         h2 {
             color: #81c784; 
         }
-        a {
-            text-decoration: none;
-            color: #388e3c;
-            font-weight: bold;
+        ul {
+            text-align: left;
+            display: inline-block;
+            margin: 10px auto;
+            padding-left: 20px;
+        }
+        ul li {
             font-size: 18px;
+            margin: 8px 0;
+            list-style-type: disc;
+            list-style-position: inside;
+            transition: transform 0.3s ease;
+        }
+        ul li:hover {
+            transform: translateX(10px);
+            color: #388e3c;
         }
         footer {
             background-color: #81c784; 
@@ -58,6 +79,21 @@
             position: fixed;
             width: 100%;
             bottom: 0;
+        }
+        footer p {
+            margin: 0;
+            color: #fff;
+            font-size: 14px;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
@@ -80,37 +116,36 @@
         <p style="color:green">
             Key Benefits of Honey and Lemon:
         </p>
-            <li style="color:black">Natural antimicrobial properties that help soothe sore throats.</li>
-            <li style="color:black">Rich in antioxidants that help detoxify the body and fight inflammation.</li>
-            <li style="color:black">Promotes better digestion and supports gut health.</li>
-            <li style="color:black">Boosts the immune system and helps fight common cold symptoms.</li>
-            <li style="color:black">Improves skin health when consumed regularly due to its vitamin C content.</li>
+        <ul>
+            <li>Natural antimicrobial properties that help soothe sore throats.</li>
+            <li>Rich in antioxidants that help detoxify the body and fight inflammation.</li>
+            <li>Promotes better digestion and supports gut health.</li>
+            <li>Boosts the immune system and helps fight common cold symptoms.</li>
+            <li>Improves skin health when consumed regularly due to its vitamin C content.</li>
+        </ul>
 
-
-            <main>
-                <section class="ingredients">
-                    <h2>Ingredients</h2>
-                
-                        <li>1 cup hot water</li>
-                        <li>1-2 tablespoons honey</li>
-                        <li>Juice of half a lemon</li>
-                        <li>Lemon slice (optional, for garnish)</li>
-                        <li>Pinch of ginger powder (optional)</li>
-                    
-                </section>
-                <section class="instructions">
-                    <h2>Instructions</h2>
-                    
-                        <li>Boil water and pour it into a mug.</li>
-                        <li>Add 1-2 tablespoons of honey into the hot water.</li>
-                        <li>Squeeze the juice of half a lemon into the mug.</li>
-                        <li>Stir well to combine the honey and lemon juice.</li>
-                        <li>Add a pinch of ginger powder (optional) for extra flavor.</li>
-                        <li>Garnish with a lemon slice if desired.</li>
-                        <li>Enjoy your warm, soothing honey and lemon tea!</li>
-                    
-                </section>
-            </main>
+        <section class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>1 cup hot water</li>
+                <li>1-2 tablespoons honey</li>
+                <li>Juice of half a lemon</li>
+                <li>Lemon slice (optional, for garnish)</li>
+                <li>Pinch of ginger powder (optional)</li>
+            </ul>
+        </section>
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <ul>
+                <li>Boil water and pour it into a mug.</li>
+                <li>Add 1-2 tablespoons of honey into the hot water.</li>
+                <li>Squeeze the juice of half a lemon into the mug.</li>
+                <li>Stir well to combine the honey and lemon juice.</li>
+                <li>Add a pinch of ginger powder (optional) for extra flavor.</li>
+                <li>Garnish with a lemon slice if desired.</li>
+                <li>Enjoy your warm, soothing honey and lemon tea!</li>
+            </ul>
+        </section>
 
         <a href="remedies.html">← Back to Remedies</a>
     </main>
