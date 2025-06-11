@@ -12,7 +12,7 @@ Simple Remedies: Step-by-step guidance for each remedy.
 Natural Ingredients: Focus on using organic and household items.
 <br> 
 
-Categories: Remedies organized for ailments like cold, headaches, skin care, digestion, and more..
+Categories: Remedies organized for ailments like cold, headaches, skin care, digestion, and more.
 <br>
 
-User-Friendly: Designed to help anyone quickly find solutions for everyday health problems...
+User-Friendly: Designed to help anyone quickly find solutions for everyday health problems.
