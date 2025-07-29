@@ -3,10 +3,11 @@ A collection of simple,natural remedies for everyday health issues using easily 
 <br> 
 
 
+
 Features:☘
 <br> 
 
-Simple Remedies: Step-by-step guidance for each remedy..
+Simple Remedies: Step-by-step guidance for each remedy...                                                   
 <br> 
 
 Natural Ingredients: Focus on using organic and household items.
