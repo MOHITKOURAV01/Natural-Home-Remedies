@@ -4,7 +4,7 @@ A collection of simple,natural remedies for everyday health issues using easily 
 
 
 
-Features:☘
+Features:
 <br> 
 
 Simple Remedies: Step-by-step guidance for each remedy...                                                   
