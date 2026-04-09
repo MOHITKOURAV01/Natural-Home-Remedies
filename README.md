@@ -8,7 +8,7 @@ A comprehensive collection of simple, natural, and effective remedies for everyd
 
 ---
 
-## 🌟 Overview
+## Overview
 
 **Natural-Home-Remedies** is an open-source project built to help people explore the power of natural healing. Whether it's a stubborn cold, a nagging headache, a skin issue, or a digestion problem — you'll find tried-and-tested home remedies here using ingredients that are probably already sitting in your kitchen (think Ginger, Turmeric, Aloe Vera, Honey, and more).
 
@@ -18,17 +18,17 @@ No fancy medicines, no complicated steps — just pure, simple, nature-backed so
 
 ---
 
-## 🚀 Features
+##  Features
 
-- ✅ **Step-by-Step Remedies** — Each remedy comes with a clear, easy-to-follow guide. No guesswork needed.
-- 🍃 **100% Natural & Organic** — Every remedy uses natural ingredients — things you already have at home.
-- 📂 **Neatly Categorized** — Remedies are organized by concern — Skin, Digestion, Cold & Flu, Immunity, Sleep, and more.
-- 📱 **Fully Responsive** — Works beautifully on both mobile and desktop screens.
-- 🎨 **Clean & Minimal UI** — A soothing green-themed design with smooth animations that feels calm and inviting.
+-  **Step-by-Step Remedies** — Each remedy comes with a clear, easy-to-follow guide. No guesswork needed.
+-  **100% Natural & Organic** — Every remedy uses natural ingredients — things you already have at home.
+-  **Neatly Categorized** — Remedies are organized by concern — Skin, Digestion, Cold & Flu, Immunity, Sleep, and more.
+-  **Fully Responsive** — Works beautifully on both mobile and desktop screens.
+-  **Clean & Minimal UI** — A soothing green-themed design with smooth animations that feels calm and inviting.
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 Here's how the project is organized:
 
@@ -71,7 +71,7 @@ Natural-Home-Remedies/
 
 ---
 
-## 🛠️ Installation & Usage
+##  Installation & Usage
 
 Want to run it on your local machine? It's super easy:
 
@@ -90,7 +90,7 @@ Want to run it on your local machine? It's super easy:
 
 ---
 
-## 🧪 Key Remedies Included
+##  Key Remedies Included
 
 | Remedy | What It Helps With |
 |---|---|
@@ -109,7 +109,7 @@ Want to run it on your local machine? It's super easy:
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 We welcome contributions! If you know a home remedy that has worked for you, feel free to share it:
 
@@ -121,12 +121,12 @@ Whether it's a new remedy, a bug fix, or a design improvement — all contributi
 
 ---
 
-## 📄 License
+##  License
 
 This project is open-source and free to use. Feel free to learn from it, share it, and improve it!
 
 ---
 
 <p align="center">
-  Developed with ❤️ by <a href="https://github.com/MOHITKOURAV01"><strong>Mohit Kourav</strong></a>
+    <a href="https://github.com/MOHITKOURAV01"><strong>Developed with ❤️</strong></a>
 </p>
